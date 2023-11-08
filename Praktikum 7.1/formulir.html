@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <style>
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-container {
+            background-color: powderblue;
+            border: 1px solid plum;
+            box-shadow: 0 0 10px palevioletred;
+            border-radius: 5px;
+            padding: 10px;
+            width: 300px;
+            margin: 100px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="form-container">
+    <h2>FORM ENTRY DATA PEGAWAI</h2>
+    <form method="post" action="">
+        <div class="form-group">
+            <label for="nik">NIK</label>
+            <input type="number" id="nik" name="nik" required>
+        </div>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nm" name="nama" required>
+        </div>
+        <div class="form-group">
+            <label for="tl">Tempat Lahir</label>
+            <input type="text" id="tl" name="tl">
+        </div>
+        <div class="form-group">
+            <label for="tgl">Tanggal Lahir</label>
+            <input type="date" id="tgl" name="tgl">
+        </div>
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="tlp">No. Telepon</label>
+            <input type="number" id="tlp" name="tlp" placeholder="ex.0213456789">
+        </div>
+        <div class="form-group">
+             <label for="Jabatan">Jabatan</label>
+                 <select name="jabatan" id="Jabatan">
+                    <option value="manager">Manager</option>
+                    <option value="lead">Leader Office</option>
+                    <option value="admin">Admin</option>
+                    <option value="pemasaran">Pemasaran</option>
+                 </select>
+        </div>
+        <div class="form-group">
+            <label for="Status">Status</label>
+            <select name="status" id="Status">
+                <option value="smnkh">Menikah</option>
+                <option value="bmnkh">Belum Menikah</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="button">
+                <button type="submit">Simpan</button>
+                <button type="reset">Batal</button>
+            </div>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
