@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Registrasi Rekreasi Kuliner</legend>      
+        <form method="post" action="">
+            <table>
+                <tr><td><label for="nama">Nama Tempat Wisata</label></td>
+                    <td>: <input type="text" id="nama" name="nama" required></td>
+                </tr>
+                <tr>
+                    <td><label for="jenis">Jenis Wisata</label></td>
+                    <td>: <select name="wisata" id="wisata" required>
+                        <option value="kopi">Kedai Kopi</option>
+                        <option value="air">Wisata Air</option>
+                        <option value="anak">Taman Anak</option>
+                        <option value="rekel">Rekreasi Keluarga</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="desk">Deskripsi Wisata</label></td>
+                    <td>: <textarea name="desk" id="desk" cols="60" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="kontak">Kontak Person</label></td>
+                    <td>: <input type="number" name="kontak" id="kontak" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telp">No.Hp/Telepon</label></td>
+                    <td>: <input type="number" name="telp" id="telp" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>: <input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="web">Alamat Web</label></td>
+                    <td>: <input type="text" name="web" id="web" placeholder="http://"></td>
+                </tr>
+                <tr>
+                    <td><label for="alt">Alamat Lengkap</label></td>
+                    <td>: <textarea name="alt" id="alt" cols="60" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="ltd">Latitude, Longitude</label></td>
+                    <td>: <input type="text" name="ltd" id="ltd"></td>
+                </tr>
+            </table>
+            
+            <input type="submit" value="Daftar">
+            <input type="reset" value="Batal">
+    </fieldset>
+</body>
+</html>
