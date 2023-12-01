@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+header, article, aside, nav, footer {
+    padding: 15px;
+}
+.content{
+    display: flex;
+    height: 80vh;
+}
+h2{
+    text-align: center;
+}
+header {
+    background-color: #d14848;
+}
+article {
+    background-color: #d8d5b0;
+    width: 50%;
+}
+aside {
+    background-color: #9ea6ab;
+    width: 25%;
+}
+nav {
+    background-color:#b0a456;
+    width: 25%;
+}
+footer {
+    background-color: #48484b;
+}

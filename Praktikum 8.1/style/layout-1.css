@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+nav {
+    background-color: #f0b000;
+    width: 20%;
+}
+header {
+    background-color: #d14848;
+    height: 60px;
+}
+article {
+    background-color: rgb(182, 176, 216);
+    width: 80%;
+}
+aside {
+    background-color: #b0a456;
+    width: 30%;
+}
+footer {
+    background-color: #48484b;
+    height: 60px;
+}
+.container{
+    display: flex;
+}
+.main-content{
+    display: flex;
+    height: 80vh;
+}
+.content{
+    width: 80%;
+}

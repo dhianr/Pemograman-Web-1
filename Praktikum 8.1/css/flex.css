@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: lavender;
+}
+nav {
+    display: flex;
+    background-color: #deff7a;
+    padding: 15px;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+}
+ul li {
+    margin-right: 15px;
+    list-style-type: none;
+}
