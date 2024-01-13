@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img picker</title>
+    <script>
+        function image_picker(){
+            const img_list = ["rembo.jpg", "sheep.jpg", "hamster.png", "cat.png", "frog.png", "fish.jpg"];
+            let picker = document.getElementById("option").value;
+
+            if (picker == "rembo"){
+                let select = img_list[0];
+                alert("ini adalah gambar ayam");
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+            if (picker == "sheep"){
+                let select = img_list[1];
+                alert("ini adalah gambar domba");
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+            if (picker == "hamster"){
+                let select = img_list[2];
+                alert("ini adalah gambar hamster");
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+            if(picker == "cat"){
+                let select = img_list[3];
+                alert("ini adalah gambar Kucing");
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+            if( picker == "frog"){
+                let select = img_list[4];
+                alert("ini adalah gambar Kodok");
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+            if (picker == "fish"){
+                let select = img_list[5];
+                alert("ini adalah gambar ikan");
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <h3>Silahkan pilih hewan yang anda senangi dibawah ini</h3>
+    <select name="" id="option" onchange="image_picker()">
+        <option value="">-----PILIH-----</option>
+        <option value="rembo">Ayam</option>♂
+        <option value="sheep">Domba</option>
+        <option value="hamster">Hamster</option>
+        <option value="cat">Kucing</option>
+        <option value="frog">Katak</option>
+        <option value="fish">Ikan</option>
+    </select>
+
+    <div class="container">
+        <img id="gambar" width="300px">
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styleform.css">
+    <script>
+        function login(){
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if(username == "ahmad2017" && password == "integrity"){
+                alert("Anda Berhasil Login!")
+                location.href = "validasi-login.html";
+            } else{
+                alert("Username atau Password yang Anda Masukkan Salah")
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Login</h1>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br>
+            <button type="button" onclick="login()">Login</button>
+        </div>
+    </div>
+</body>
+</html>
